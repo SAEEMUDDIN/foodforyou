@@ -1,61 +1,60 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Food4u
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Group Name: Al Ma'rifah
 
-## About Laravel
+Group Members:
+- MD SAEEM UDDIN 1721129
+- MR SHARIFUL ISLAM 1619061
+- MUHAMAD AKMAL BIN ABU BAKAR 1811543
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**INTRODUCTION**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+As a project of our courses INFO 3305 for semester 1 2020/2021, We discuss among ourselves and decide to make an application that will provide a good service to the users. We are going to make an application to order food in advance and users can choose to dine in later or we will deliver it to their footsteps. 
+The application name will be Food4U. This application is going to benefits most people especially during this pandemic when most of people are stayed at home. The application will provide a variety of food category to meet the tastes of various people. We also will be placed food which is in promotion to the front page as a marketing strategy.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**OBJECTIVES**
 
-## Learning Laravel
+The general objectives of this web application are to develop a reliable, convenient and giving a positive impact to the public. Our goals are as stated below.
+- Provide an application that gives satisfaction to the customer
+- Design an application that will please the user of the application
+- To improve communication between buyers and seller and minimize the time of ordering
+- To calculate the bill, receipt amount automatically and accurately
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**FEATURES AND FUNCTIONALITIES**
 
-## Laravel Sponsors
+This website application will ease a person everyday life. They can order the food without need to be physically on the store or restaurant. Furthermore, during this pandemic of COVID-19, the risk of infected could be lessen since we could avoid any gathering. This website also can provide an information on store as well as avoid any mistake since the price are calculated automatically and accurately.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+ **DIAGRAM**
+ 
+ER_Diagram
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+![ERD](erd.png)
 
-## Contributing
+The diagram above can be seen that we use controller to accept input from the customer class which allows the user to input their name, address, and phone number. Once the details are retrieved, it will convert its command to the model to insert the customers data into the system database. Then the menu will be displayed by using view. The user will once again choose the food and the quantity of the products and the model will receive their input and will be sent onto databases.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Once all the data are received, the system will calculate the total price of the food of the customer ordered. It will then display the total amount of customer need to pay. The controller will take part of the process and view system will display back to the customer. The system will process the payment and display their receipt and order ID to track their order status. Once the order has been completed, it will delete the data in database system.
 
-## Code of Conduct
+**Sequance Diagram**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![Sequance](Food4U_Sequance.png)
 
-## Security Vulnerabilities
+**Work Delegation**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![WD](Food4U_WD.png)
 
-## License
+ 
+ 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ **REFRENCES**
+   - Controllers. (n.d.). Laravel - The PHP Framework For Web Artisans. https://laravel.com/docs/8.x/controllers
+   - Eloquent: Getting started. (n.d.). Laravel - The PHP Framework For Web Artisans. https://laravel.com/docs/8.x/eloquent
+   - (n.d.). KFC Malaysia | Now available for Delivery and Self Collect!. https://kfc.com.my
+   - Views. (n.d.). Laravel - The PHP Framework For Web Artisans. https://laravel.com/docs/8.x/views
+   
+   
+   
+   
+   **PROJECT CODES**
+   https://drive.google.com/drive/folders/1p0UraToVWCyAT2myYN11nJONDHhvexK2?usp=sharing
