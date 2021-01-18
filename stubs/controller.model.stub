@@ -1,0 +1,104 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class {{ class }} extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return \Illuminate\Http\Response
+     */
+    public function edit({{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, {{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy({{ model }} ${{ modelVariable }})
+    {
+        //
+    }
+
+     public function productrestore($resoter_id)
+    {
+      //Product::withTrashed()->find($resoter_id)->restore();
+      //return back()->with('restore_status' , 'ID '.$resoter_id.' Restore Successfully!');
+
+    }
+
+    public function productdelete($delete_id)
+    {
+      //Product::withTrashed()->find($delete_id)->forceDelete();
+      //return back()->with('delete_status' , 'ID '.$delete_id.' Delete Successfully!');
+
+    }
+
+    public function markrestoredelete(Request $request)
+    {
+       // switch ($request->button) {
+      //   case 'Restore':
+      //     if (isset($request->product_id)) {
+      //       foreach ($request->product_id as $single_product) {
+      //         Product::withTrashed()->find($single_product)->restore();
+      //       }
+      //       return back()->with('mark_restore' , 'Mark Restore Successfully!!!');
+      //     }
+      //     break;
+
+      //     case 'Delete':
+      //       if (isset($request->product_id)) {
+      //         foreach ($request->product_id as $single_product) {
+      //           Product::withTrashed()->find($single_product)->forceDelete();
+      //         }
+      //         return back()->with('force_delete' , 'Mark Delete Successfully!!!');
+      //       }
+      //     break;
+      // }
+
+    }
+    
+}
